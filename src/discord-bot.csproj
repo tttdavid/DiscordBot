@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>discord_bot</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.AI.OpenAI" Version="1.0.0-beta.8" />
+    <PackageReference Include="Discord.Net.Core" Version="3.11.0" />
+    <PackageReference Include="dotenv.net" Version="3.1.2" />
+    <PackageReference Include="DotNetEnv" Version="2.5.0" />
+    <PackageReference Include="DSharpPlus" Version="5.0.0-nightly-01662" />
+    <PackageReference Include="DSharpPlus.CommandsNext" Version="5.0.0-nightly-01662" />
+    <PackageReference Include="DSharpPlus.Interactivity" Version="5.0.0-nightly-01662" />
+    <PackageReference Include="DSharpPlus.SlashCommands" Version="5.0.0-nightly-01662" />
+    <PackageReference Include="HSNXT.DSharpPlus.ModernEmbedBuilder" Version="5.0.0-pre.210" />
+    <PackageReference Include="Microsoft.DotNet.Watcher.Tools" Version="2.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>
