@@ -9,7 +9,15 @@ namespace src.Commands
         [Command("test")]
         public async Task TestCommand(CommandContext ctx)
         {
-            await ctx.RespondAsync("qwe");
+            await ctx.Message.RespondAsync("Test");
+        }
+
+        [Command("анек")]
+        public async Task RandomAnek(CommandContext ctx)
+        {
+            DiscordChannel channel = ctx.Channel.Guild.GetChannel(809592781135806534);
+            var messages = await channel.GetMessagesBeforeAsync(channel.LastMessageId.Value, 1000);
+            await ctx.Message.RespondAsync(messages[new Random().Next(messages.Count)].Content);
         }
 
         [Command("дединсайд")]

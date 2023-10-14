@@ -73,15 +73,6 @@
           }
         }
       },
-      "dotenv.net/3.1.2": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.1/dotenv.net.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.1/dotenv.net.dll": {}
-        }
-      },
       "DotNetEnv/2.5.0": {
         "type": "package",
         "dependencies": {
@@ -1284,20 +1275,6 @@
         "lib/netstandard2.0/Discord.Net.Core.xml",
         "lib/netstandard2.1/Discord.Net.Core.dll",
         "lib/netstandard2.1/Discord.Net.Core.xml"
-      ]
-    },
-    "dotenv.net/3.1.2": {
-      "sha512": "lFm4hGX9JkNtAF36Uz4C3WT7MC6Ys802k0cPvlln8ydmH67GQjnToH+w645tQm1czAjW/V6tPE088lD77sYFGA==",
-      "type": "package",
-      "path": "dotenv.net/3.1.2",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "dotenv.net.3.1.2.nupkg.sha512",
-        "dotenv.net.nuspec",
-        "lib/netstandard1.6/dotenv.net.dll",
-        "lib/netstandard2.0/dotenv.net.dll",
-        "lib/netstandard2.1/dotenv.net.dll"
       ]
     },
     "DotNetEnv/2.5.0": {
@@ -3514,8 +3491,7 @@
       "DotNetEnv >= 2.5.0",
       "HSNXT.DSharpPlus.ModernEmbedBuilder >= 5.0.0-pre.210",
       "Microsoft.DotNet.Watcher.Tools >= 2.0.2",
-      "Newtonsoft.Json >= 13.0.3",
-      "dotenv.net >= 3.1.2"
+      "Newtonsoft.Json >= 13.0.3"
     ]
   },
   "packageFolders": {
@@ -3601,10 +3577,6 @@
           "Newtonsoft.Json": {
             "target": "Package",
             "version": "[13.0.3, )"
-          },
-          "dotenv.net": {
-            "target": "Package",
-            "version": "[3.1.2, )"
           }
         },
         "imports": [

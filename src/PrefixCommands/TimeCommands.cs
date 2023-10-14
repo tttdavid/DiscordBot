@@ -38,7 +38,6 @@ namespace src.Commands
             DateTime tbilisi = await Temp.Time("tbilisi");
             DateTime vladivostok = await Temp.Time("vladivostok");
 
-
             DiscordEmbedBuilder embed = new DiscordEmbedBuilder()
             {
                 Color = DiscordColor.Magenta,

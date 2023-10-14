@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ZUhcDIuRVqjQKmn/X3YYaZl6NhDDDv268UoZcx10aRIMj24O5MMBqiGP22I3PgUDN4kmL0S0k+XQ4PzoZZfnBw==",
+  "dgSpecHash": "bYJPaooljGcK5X3mL9J03bLWaEtGy5bArpNQ0jUsxkq1+3WORPcaZxcktUYtgu13M+SUoj6gIbnzeuiFTl27hQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\wwwwx\\source\\C#\\discord-bot\\src\\discord-bot.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,6 @@
     "C:\\Users\\wwwwx\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\wwwwx\\.nuget\\packages\\concurrenthashset\\1.3.0\\concurrenthashset.1.3.0.nupkg.sha512",
     "C:\\Users\\wwwwx\\.nuget\\packages\\discord.net.core\\3.11.0\\discord.net.core.3.11.0.nupkg.sha512",
-    "C:\\Users\\wwwwx\\.nuget\\packages\\dotenv.net\\3.1.2\\dotenv.net.3.1.2.nupkg.sha512",
     "C:\\Users\\wwwwx\\.nuget\\packages\\dotnetenv\\2.5.0\\dotnetenv.2.5.0.nupkg.sha512",
     "C:\\Users\\wwwwx\\.nuget\\packages\\dsharpplus\\5.0.0-nightly-01662\\dsharpplus.5.0.0-nightly-01662.nupkg.sha512",
     "C:\\Users\\wwwwx\\.nuget\\packages\\dsharpplus.commandsnext\\5.0.0-nightly-01662\\dsharpplus.commandsnext.5.0.0-nightly-01662.nupkg.sha512",

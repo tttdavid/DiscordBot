@@ -43,7 +43,6 @@ C:\Users\wwwwx\source\C#\discord-bot\src\bin\Debug\net7.0\discord-bot.dll
 C:\Users\wwwwx\source\C#\discord-bot\src\bin\Debug\net7.0\discord-bot.pdb
 C:\Users\wwwwx\source\C#\discord-bot\src\bin\Debug\net7.0\ConcurrentCollections.dll
 C:\Users\wwwwx\source\C#\discord-bot\src\bin\Debug\net7.0\Discord.Net.Core.dll
-C:\Users\wwwwx\source\C#\discord-bot\src\bin\Debug\net7.0\dotenv.net.dll
 C:\Users\wwwwx\source\C#\discord-bot\src\bin\Debug\net7.0\DotNetEnv.dll
 C:\Users\wwwwx\source\C#\discord-bot\src\bin\Debug\net7.0\DSharpPlus.dll
 C:\Users\wwwwx\source\C#\discord-bot\src\bin\Debug\net7.0\DSharpPlus.CommandsNext.dll

@@ -16,7 +16,7 @@ namespace src.Commands
 
         [Command("editbotname")]
         [RequireRoles(RoleCheckMode.MatchIds, 1157368470351126568)]
-        public async Task ChangeBotName(CommandContext ctx, string xdd)
+        public async Task ChangeBotName(CommandContext ctx, [RemainingText] string xdd)
         {
             DiscordMember user = await ctx.Channel.Guild.GetMemberAsync(1130753536574103562);
             await user.ModifyAsync(x => x.Nickname = xdd);
@@ -24,6 +24,6 @@ namespace src.Commands
 
         [Command("editname")]
         [RequireRoles(RoleCheckMode.MatchIds, 1157368470351126568)]
-        public async Task EditUsername(CommandContext ctx, DiscordMember member, string msg) => await member.ModifyAsync(x => x.Nickname = msg);
+        public async Task EditUsername(CommandContext ctx, DiscordMember member, [RemainingText] string msg) => await member.ModifyAsync(x => x.Nickname = msg);
     }
 }

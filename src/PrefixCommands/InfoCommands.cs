@@ -20,13 +20,13 @@ namespace src.Commands
         }
 
         [Command("avatar")]
-        public async Task GetAvatar(CommandContext ctx, string s)
+        public async Task GetAvatar(CommandContext ctx, DiscordMember member)
         {
             DiscordEmbedBuilder embed = new DiscordEmbedBuilder
             {
                 Color = DiscordColor.Magenta,
-                ImageUrl = ctx.Message.MentionedUsers.First().AvatarUrl,
-                Title = $"{ctx.Message.MentionedUsers.First().GlobalName}'s Profile pic."
+                ImageUrl = member.AvatarUrl,
+                Title = $"{member.DisplayName}'s Profile pic."
             };
             await ctx.Message.RespondAsync(embed);
         }
@@ -38,21 +38,23 @@ namespace src.Commands
             {
                 Color = DiscordColor.Magenta,
                 Title = $"{ctx.Member.GlobalName} joined discord at {ctx.Member.CreationTimestamp.ToString("yyyy-MM-dd")} " +
-                        $"{ctx.Member.CreationTimestamp.Hour}:{ctx.Member.CreationTimestamp.Minute}",
+                        $"{ctx.Member.CreationTimestamp.Hour}:{ctx.Member.CreationTimestamp.Minute} \n" +
+                        $"{(int)(DateTimeOffset.Now - ctx.Member.CreationTimestamp).TotalDays} Days on dicord",
                 ImageUrl = ctx.Member.AvatarUrl
             };
             await ctx.Message.RespondAsync(embed);
         }
 
         [Command("regdate")]
-        public async Task RegDate(CommandContext ctx, string s)
+        public async Task RegDate(CommandContext ctx, DiscordMember member)
         {
             DiscordEmbedBuilder embed = new DiscordEmbedBuilder
             {
                 Color = DiscordColor.Magenta,
-                Title = $"{ctx.Message.MentionedUsers.First().GlobalName} joined discord at {ctx.Message.MentionedUsers.First().CreationTimestamp.ToString("yyyy-MM-dd")} " +
-                        $"{ctx.Message.MentionedUsers.First().CreationTimestamp.ToString("hh:mm tt")}",
-                ImageUrl = ctx.Message.MentionedUsers.First().AvatarUrl
+                Title = $"{member.DisplayName} joined discord at {member.CreationTimestamp.ToString("yyyy-MM-dd")}" +
+                        $"{member.CreationTimestamp.ToString("hh:mm:tt")} \n" +
+                        $"{(int)(DateTimeOffset.Now - member.CreationTimestamp).TotalDays} Days on dicord",
+                ImageUrl = member.AvatarUrl
             };
             await ctx.Message.RespondAsync(embed);
         }
